@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5</title>
+
+    <!-- dodajemy plik CSS -->
+    <!-- href: wzgledny / bezwzgledny -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- dodajemy fonty -->
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Strona główna</a>
+          </li>
+          <li>
+            <a href="omnie.html">O mnie</a>
+          </li>
+          <li>
+            <a href="galeria.html">Galeria</a>
+          </li>
+          <li>
+            <a href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Kontakt</h1>
+
+      <article>
+        <form action="#" method="post">
+          <!-- "spięcie" label z input otrzymujemy po podaniu takiej samej wartości dla atrybutów "for" oraz "id" -->
+          <label for="firstName">
+            Imię:
+            <input
+              type="text"
+              name="imie"
+              id="firstName"
+              required
+              minlength="3"
+              maxlength="15"
+              placeholder="np. Kuba"
+            />
+          </label>
+          <br />
+          <label for="lastName">
+            Nazwisko: <input type="text" name="nazwisko" id="lastName" />
+          </label>
+          <br />
+          <label for="email">
+            Email: <input type="email" name="email" id="email" required />
+          </label>
+          <br />
+
+          <label for="file">
+            Plik:
+            <input
+              type="file"
+              name="file"
+              id="file"
+              multiple
+              accept="image/png, image/jpeg"
+            />
+          </label>
+
+          <input type="date" name="" id="" />
+          <input type="color" name="" id="" />
+          <input type="password" name="" id="" />
+          <input type="range" name="" id="" value="10" min="1" max="15" />
+          <input type="reset" value="reset" />
+
+          <!-- znaczniki pojedyncze koncza sie "/>" -->
+          <input type="submit" value="Wyślij" />
+        </form>
+      </article>
+    </main>
+    <footer>
+      <!-- encja -->
+      <p>&copy; by JB</p>
+    </footer>
+  </body>
+</html>
