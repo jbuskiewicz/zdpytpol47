@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- p - znacznik blokowy -->
-    <p>Hello world! :)</p>
+    <p><span class="strong">Hello</span> <u>world</u>! :)</p>
 
     <!-- a - znacznik liniowy -->
     <a href="http://google.com" target="_blank" rel="noopener noreferrer">
@@ -28,5 +28,53 @@
     <!-- x => <1,6> -->
 
     <h1>Język znaczników - HTML</h1>
+    <h2>Język znaczników - HTML</h2>
+    <h3>Język znaczników - HTML</h3>
+    <h4>Język znaczników - HTML</h4>
+    <h5>Język znaczników - HTML</h5>
+    <h6>Język znaczników - HTML</h6>
+
+    <!-- id - wartosc unikalna -->
+    <!-- class - wielokrotne uzycie -->
+    <div id="header"></div>
+    <div id="content">
+      <div id="aside"></div>
+      <div id="article"></div>
+    </div>
+    <div id="footer"></div>
+    <!-- src - source - zrodlo obrazka -->
+    <!-- alt - alternate - tekst, ktory pojawi sie na stronie w przypadku bledu ladowania grafiki -->
+    <img
+      src="https://i.guim.co.uk/img/media/cbf8997619f7b7d0bc7b718ed56a485195505b41/103_81_3288_1974/master/3288.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=038474d38bb04eac4f8002e30254e6b21"
+      alt="Poznań - starówka"
+    />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- div -> p -> lorem -->
+    <style>
+      div p {
+        border: 1px solid seagreen;
+      }
+      /* display: inline - el. liniowy (zajmuje tyle miejsca, ile ma w zawartości) */
+      /* display: block - el. blokowy (rozszerza sie na 100% dostępnej szerokości) */
+    </style>
+    <div>
+      <p>
+        <span style="border: 1px solid darkblue"> Lorem ipsum. </span>
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius suscipit
+        aut quo deserunt, molestiae porro et magnam accusamus nulla id soluta
+        reiciendis ratione debitis! Minus temporibus placeat soluta ullam autem!
+      </p>
+    </div>
+
+    <script>
+      console.log("test");
+    </script>
+    <script src=""></script>
   </body>
 </html>
